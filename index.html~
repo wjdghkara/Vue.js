@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>my-project</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hello"> {{ message }}</div>
+    <div id="example-1">
+        <button v-on:click="counter += 1">Add 1</button>
+        <p>button was clicked {{ counter }} times</p>
+    </div>
+    <!-- built files will be auto injected -->
+    
+    <script>
+	new Vue({
+	    el: '#hello',
+	    data: {
+	        message: 'Hello Wolrd!'
+	    }
+	});
+
+	new Vue({
+ 	    el: '#example-1',
+	    data: {
+	        counter: 0
+	    }
+	});
+    </script>
+  </body>
+</html>
